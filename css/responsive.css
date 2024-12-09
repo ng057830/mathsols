@@ -1,0 +1,15 @@
+/* Estilos para pantallas pequeñas */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .service-item {
+    width: 100%;
+  }
+
+  .btn-cta {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
