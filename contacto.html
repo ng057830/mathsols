@@ -74,9 +74,14 @@
     <!-- Sección de Contacto Actualizada -->
     <section id="contacto" class="contact">
       <div class="container">
+        <h2>Contáctanos</h2>
+        <p>
+          Envíanos tus consultas y nos pondremos en contacto contigo a la
+          brevedad.
+        </p>
         <div class="form-container">
           <form
-            action="https://getform.io/f/aejjzrdb"
+            action="https://getform.io/f/aejjzrdb?captcha=recaptcha"
             method="POST"
             enctype="multipart/form-data"
           >
@@ -130,11 +135,27 @@
               <label for="archivo">Adjuntar Archivos</label>
               <input type="file" id="archivo" name="attachments" multiple />
             </div>
+            <!-- Contenedor para centrar el reCAPTCHA -->
+            <div class="recaptcha-container">
+              <div class="g-recaptcha" data-sitekey="TU_CLAVE_DEL_SITIO"></div>
+            </div>
             <button type="submit" class="btn">Enviar Mensaje</button>
           </form>
         </div>
       </div>
     </section>
+
+    <!-- Estilos para centrar el reCAPTCHA -->
+    <style>
+      .recaptcha-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px; /* Opcional */
+      }
+    </style>
+
+    <!-- Script de reCAPTCHA v2 -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!-- Footer -->
     <footer class="footer">

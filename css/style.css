@@ -1380,3 +1380,9 @@ body {
   }
 }
 
+/* En tu archivo styles.css */
+.recaptcha-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Opcional */
+}
